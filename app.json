@@ -1,0 +1,8 @@
+{
+  "name": "Sports Embassy",
+  "description": "Sports Embassy",
+  "image": "heroku/python",
+  "repository": "https://github.com/sports-embassy/sports-embassy",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ]
+}
