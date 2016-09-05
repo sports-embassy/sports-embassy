@@ -9,9 +9,9 @@ class Event(models.Model):
     outside = models.BooleanField()
     date = models.DateTimeField()
     frequence = models.CharField(max_length=20)
-    group = models.ForeignKey(SportGroup)
-    sport_type = models.ForeignKey(SportType)
-    target = models.ForeignKey(TargetGroup)
+    # group = models.ForeignKey(SportGroup)
+    # sport_type = models.ForeignKey(SportType)
+    # target = models.ForeignKey(TargetGroup)
 
 
 class SportGroup(models.Model):

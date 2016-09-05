@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <title>sports embassy - Startseite</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'common/style.css' %}" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+<header class="mainHeader">
+    <ul class="languageSwitcher mainHeader-left">
+        <li><a href="#" rel="alternate" lang="de">de</a></li>
+        <li><a href="#" rel="alternate" lang="en">en</a></li>
+        <li><a href="#" rel="alternate" lang="fr">fr</a></li>
+    </ul>
+    <div class="mainHeader-right">
+        <a href="register.html">register</a>
+        <a href="login.html">login</a>
+    </div>
+    <h1><a href="/" rel="home">Sports embassy</a></h1>
+</header>
+
+<main class="main">
+
+    {% block content %}{% endblock %}
+
+</main>
+
+<footer class="mainFooter">
+    <a href="imprint.html">Imprint</a>
+    <a href="add_event.html">add event</a>
+</footer>
+</body>

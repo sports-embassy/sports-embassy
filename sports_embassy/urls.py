@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from common import views
+from events import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
