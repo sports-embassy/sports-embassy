@@ -48,13 +48,13 @@ a:not([href]) {
 
 hr {
   border: 0;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #adadad;
   margin: 1em 0; }
 
 pre, code {
   font-size: 90%;
   font-family: monospace;
-  background-color: #f3f3f3; }
+  background-color: whitesmoke; }
 
 code {
   padding: 0 0.25em; }
@@ -62,7 +62,7 @@ code {
 pre {
   padding: 0.5em;
   overflow: auto;
-  border: 1px solid #aaa; }
+  border: 1px solid #adadad; }
   pre code {
     background: none;
     font-size: 100%;
@@ -88,14 +88,14 @@ table {
   table td, table th {
     text-align: start;
     padding: 0.5em;
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #adadad;
     vertical-align: top; }
 
 textarea {
   resize: vertical; }
 
 fieldset {
-  border: 1px solid #aaa; }
+  border: 1px solid #adadad; }
 
 sub, sup {
   line-height: 0; }
@@ -110,37 +110,35 @@ sub, sup {
 label {
   display: block; }
 
-input, .button,
+input,
+textarea,
+select, .button,
 button,
 [type=button],
-[type=submit],
-textarea,
-select {
+[type=submit] {
   margin: 0 0 1em;
-  border: 1px solid #aaa;
+  border: 1px solid #adadad;
   border-radius: 0.2em;
   padding: 0.3em 0.75em;
   font-family: inherit;
-  font-size: inherit;
-  color: #333;
-  background: #fff; }
-  input:invalid, .button:invalid,
-  button:invalid,
-  [type=button]:invalid,
-  [type=submit]:invalid,
+  font-size: inherit; }
+
+input,
+textarea,
+select {
+  background: #fff;
+  color: #333; }
+  input:invalid,
   textarea:invalid,
   select:invalid {
     border-color: red;
     color: red; }
-  input:disabled, .button:disabled,
-  button:disabled,
-  [type=button]:disabled,
-  [type=submit]:disabled,
+  input:disabled,
   textarea:disabled,
   select:disabled {
-    background: #f3f3f3 !important;
-    color: #aaa !important;
-    border-color: #aaa !important;
+    border-color: #adadad;
+    background: whitesmoke;
+    color: #adadad;
     cursor: not-allowed; }
 
 .button,
@@ -151,10 +149,10 @@ button,
   display: inline-block;
   cursor: pointer;
   line-height: 1.8;
-  background: transparent;
   text-align: center;
   border-color: #294DBF;
-  color: #294DBF; }
+  background: #294DBF;
+  color: #fff; }
   .button:hover, .button:focus,
   button:hover,
   button:focus,
@@ -162,22 +160,29 @@ button,
   [type=button]:focus,
   [type=submit]:hover,
   [type=submit]:focus {
-    background: #294DBF;
+    border-color: #273e97;
+    background: #273e97;
     color: #fff; }
   .button:active,
   button:active,
   [type=button]:active,
   [type=submit]:active {
     border-color: #242f6e;
-    background: #242f6e; }
+    background: #242f6e;
+    color: #fff; }
+  .button:disabled,
+  button:disabled,
+  [type=button]:disabled,
+  [type=submit]:disabled {
+    border-color: #94a6df;
+    background: #94a6df;
+    color: #eaedf9;
+    cursor: not-allowed; }
 
 .standalone {
   max-width: 20em;
   margin: 0 auto; }
-  .standalone input, .standalone .button, .standalone
-  button, .standalone
-  [type=button], .standalone
-  [type=submit],
+  .standalone input,
   .standalone select,
   .standalone textarea {
     display: block;

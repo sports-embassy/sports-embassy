@@ -95,3 +95,5 @@ db.sqlite3
 share
 include
 pip-selfcheck.json
+bower_components
+node_modules

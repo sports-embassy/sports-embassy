@@ -1,0 +1,161 @@
+@import 'bower_components/sass-planifolia/sass/math';
+@import 'bower_components/sass-planifolia/sass/clearfix';
+@import 'bower_components/sass-planifolia/sass/contrast';
+@import 'bower_components/sass-planifolia/sass/grid';
+@import 'bower_components/sass-planifolia/sass/color';
+
+$color-link: #294DBF;
+$color-link-focus: pf-shade($color-link, 40%);
+
+$color-brand: #FDE1CC;
+
+@function color-brand($x) {
+	@return pf-adjust-hue($color-brand, 360deg * $x, 'hsl');
+}
+
+@import 'bower_components/mfbs/sass/variables';
+@import 'bower_components/mfbs/sass/base';
+@import 'bower_components/mfbs/sass/form';
+
+$planifolia-contrast-dark-default: $color-fg;
+$planifolia-contrast-light-default: $color-bg;
+
+@include grid-set('gutter', $padding);
+
+
+.standalone {
+	max-width: 20em;
+	margin: 0 auto;
+
+	input,
+	select,
+	textarea {
+		display: block;
+		width: 100%;
+	}
+}
+
+.main {
+	margin-bottom: 5em;
+}
+
+.mainHeader {
+	@include pie-clearfix;
+	text-align: center;
+	margin-bottom: 3em;
+
+	a[rel="home"] {
+		color: inherit;
+		text-decoration: inherit;
+	}
+}
+.mainHeader-left {
+	float: left;
+}
+.mainHeader-right {
+	float: right;
+}
+
+.mainFooter {
+	background: color-brand(0);
+	color: contrast-color(color-brand(0));
+	font-size: small;
+	padding: 0 $padding;
+
+	a {
+		text-decoration: inherit;
+		color: inherit;
+		margin-right: $spacer;
+	}
+}
+
+.languageSwitcher {
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline;
+
+		&:not(:last-child)::after {
+			content: " | ";
+		}
+	}
+}
+
+.filterBar {
+	@include clearfix;
+	font-size: small;
+
+	label {
+		display: inline;
+		margin: 0 $spacer;
+		white-space: nowrap;
+	}
+}
+.filterBar-left {
+	float: left;
+	text-align: left;
+}
+.filterBar-right {
+	float: right;
+	text-align: right;
+}
+
+.events {
+	@include clearfix;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: block;
+
+		@media (min-width: 25em) {
+			@include grid-same-width(2);
+		}
+		@media (min-width: 38em) {
+			@include grid-same-width(3);
+		}
+	}
+}
+
+.listItem {
+	display: block;
+	background-size: cover;
+	background-position: 50%;
+	margin-bottom: $padding;
+	text-decoration: none;
+
+	@for $i from 0 through 5 {
+		$color: color-brand($i / 6);
+
+		&.m#{$i} .listItem-mask {
+			$bg: rgba($color, 0.75);
+			$fg: contrast-color($bg);
+			$_: contrast-check($bg, $fg);
+			background: $bg;
+			color: $fg;
+		}
+
+		&.m#{$i}:hover .listItem-mask,
+		&.m#{$i}:focus .listItem-mask {
+			background: $color;
+			color: contrast-color($color);
+		}
+	}
+}
+.listItem-mask {
+	height: 6em;
+	padding: 1em;
+
+}
+.listItem-title {
+	text-transform: uppercase;
+}
+.listItem-meta {
+	font-size: small;
+}
+
+.event-action {
+	float: right;
+}
