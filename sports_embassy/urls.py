@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.http import HttpResponseRedirect
 
-from events import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', lambda r: HttpResponseRedirect('events/')),
+    url(r'^events/', include('events.urls')),
     url(r'^admin/', admin.site.urls),
 ]

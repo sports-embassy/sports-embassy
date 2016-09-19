@@ -1,0 +1,917 @@
+[
+  {
+    "model": "events.sporttype",
+    "pk": 1,
+    "fields": {
+      "title": "Ballsport"
+    }
+  },
+  {
+    "model": "events.sporttype",
+    "pk": 2,
+    "fields": {
+      "title": "Leichtathletik"
+    }
+  },
+  {
+    "model": "events.sporttype",
+    "pk": 3,
+    "fields": {
+      "title": "Turnsport"
+    }
+  },
+  {
+    "model": "events.sporttype",
+    "pk": 4,
+    "fields": {
+      "title": "Kampfsport"
+    }
+  },
+  {
+    "model": "events.sporttype",
+    "pk": 5,
+    "fields": {
+      "title": "Radsport"
+    }
+  },
+  {
+    "model": "events.sporttype",
+    "pk": 6,
+    "fields": {
+      "title": "Kraftsport"
+    }
+  },
+  {
+    "model": "events.sportgroup",
+    "pk": 1,
+    "fields": {
+      "title": "Fussball",
+      "sport_type": 1
+    }
+  },
+  {
+    "model": "events.sportgroup",
+    "pk": 2,
+    "fields": {
+      "title": "Handball",
+      "sport_type": 1
+    }
+  },
+  {
+    "model": "events.sportgroup",
+    "pk": 3,
+    "fields": {
+      "title": "Karate",
+      "sport_type": 4
+    }
+  },
+  {
+    "model": "events.sportgroup",
+    "pk": 4,
+    "fields": {
+      "title": "Laufen",
+      "sport_type": 2
+    }
+  },
+  {
+    "model": "events.targetgroup",
+    "pk": 1,
+    "fields": {
+      "title": "M\u00e4nner"
+    }
+  },
+  {
+    "model": "events.targetgroup",
+    "pk": 2,
+    "fields": {
+      "title": "Frauen"
+    }
+  },
+  {
+    "model": "events.targetgroup",
+    "pk": 3,
+    "fields": {
+      "title": "Frauen und M\u00e4nner"
+    }
+  },
+  {
+    "model": "events.eventdate",
+    "pk": 1,
+    "fields": {
+      "date": "2016-09-17T16:57:06Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 1,
+    "fields": {
+      "title": "Fussball in der Duncker",
+      "description": "Jede Woche Fussball in der Dunckerstr.",
+      "spots": 25,
+      "outside": true,
+      "group": 1,
+      "target": 3
+    }
+  },
+  {
+    "model": "events.eventoneventdate",
+    "pk": 1,
+    "fields": {
+      "event": 1,
+      "event_date": 1,
+      "takes_place": true
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "polls",
+      "model": "question"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "polls",
+      "model": "choice"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "events",
+      "model": "sporttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "events",
+      "model": "sportgroup"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "events",
+      "model": "targetgroup"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "events",
+      "model": "eventdate"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "events",
+      "model": "event"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "events",
+      "model": "eventoneventdate"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "0k6ogfsu59ncjj4oa5im6iowe13zspie",
+    "fields": {
+      "session_data": "Njc5NDc0YmFiMmYwMmY2YjliNDhiYjZhNTY1M2M0YjI3NmM4YTc2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNDYxMmY5YzllY2Y5MWNkYTAwMzUyNjQ5YzEzZjQxMWU1ZDc3MWY3ZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+      "expire_date": "2016-09-18T17:02:22.078Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "emvdp5ypvaeecme9pll79nsqoh4ie8b5",
+    "fields": {
+      "session_data": "Njc5NDc0YmFiMmYwMmY2YjliNDhiYjZhNTY1M2M0YjI3NmM4YTc2Yjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNDYxMmY5YzllY2Y5MWNkYTAwMzUyNjQ5YzEzZjQxMWU1ZDc3MWY3ZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+      "expire_date": "2016-10-03T18:32:20.161Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "nkn1i29v44fgon9st6f344r5yxqwhmxt",
+    "fields": {
+      "session_data": "ZTdjYzNmNzViOGFlMzUyMmI1MzViY2ExMTVlMTkyYWM1N2Q2YzRmMzp7Il9hdXRoX3VzZXJfaGFzaCI6IjQ2MTJmOWM5ZWNmOTFjZGEwMDM1MjY0OWMxM2Y0MTFlNWQ3NzFmN2QiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+      "expire_date": "2016-09-08T12:48:27.568Z"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add question",
+      "content_type": 7,
+      "codename": "add_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change question",
+      "content_type": 7,
+      "codename": "change_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete question",
+      "content_type": 7,
+      "codename": "delete_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add choice",
+      "content_type": 8,
+      "codename": "add_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change choice",
+      "content_type": 8,
+      "codename": "change_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete choice",
+      "content_type": 8,
+      "codename": "delete_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add sport type",
+      "content_type": 9,
+      "codename": "add_sporttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change sport type",
+      "content_type": 9,
+      "codename": "change_sporttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete sport type",
+      "content_type": 9,
+      "codename": "delete_sporttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can add sport group",
+      "content_type": 10,
+      "codename": "add_sportgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can change sport group",
+      "content_type": 10,
+      "codename": "change_sportgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can delete sport group",
+      "content_type": 10,
+      "codename": "delete_sportgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can add target group",
+      "content_type": 11,
+      "codename": "add_targetgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can change target group",
+      "content_type": 11,
+      "codename": "change_targetgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can delete target group",
+      "content_type": 11,
+      "codename": "delete_targetgroup"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can add event date",
+      "content_type": 12,
+      "codename": "add_eventdate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can change event date",
+      "content_type": 12,
+      "codename": "change_eventdate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can delete event date",
+      "content_type": 12,
+      "codename": "delete_eventdate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add event",
+      "content_type": 13,
+      "codename": "add_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change event",
+      "content_type": 13,
+      "codename": "change_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete event",
+      "content_type": 13,
+      "codename": "delete_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can add event on event date",
+      "content_type": 14,
+      "codename": "add_eventoneventdate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can change event on event date",
+      "content_type": 14,
+      "codename": "change_eventoneventdate"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can delete event on event date",
+      "content_type": 14,
+      "codename": "delete_eventoneventdate"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$24000$8FLQKMeitF4d$winvI3Im0UEuiLlCMsFyaWOUW0zJzm3BqeNle09DrNg=",
+      "last_login": "2016-09-19T18:32:20.155Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2016-08-25T12:48:15.308Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2016-08-25T13:21:00.264Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Nothing",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2016-08-25T13:21:08.911Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "A Lot",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2016-09-17T16:57:07.132Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "EventDate object",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2016-09-18T06:34:02.019Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "SportType object",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2016-09-18T06:34:47.639Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Leichtathletik",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2016-09-18T06:35:42.410Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Turnsport",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2016-09-18T06:35:47.587Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "Kampfsport",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2016-09-18T06:36:03.451Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "Radsport",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2016-09-18T06:36:11.471Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "Kraftsport",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2016-09-18T06:39:39.512Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Fussball",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2016-09-18T06:39:46.651Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Handball",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2016-09-18T06:39:53.488Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "Karate",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2016-09-18T06:40:01.855Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Laufen",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2016-09-18T06:42:35.174Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "M\u00e4nner",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2016-09-18T06:42:40.760Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Frauen",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2016-09-18T06:42:49.036Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Frauen und M\u00e4nner",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2016-09-18T06:43:38.252Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Fussball in der Duncker",
+      "action_flag": 1,
+      "change_message": "Added."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2016-09-18T06:44:35.098Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Fussball in der Duncker",
+      "action_flag": 2,
+      "change_message": "Added event on event date \"EventOnEventDate object\"."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2016-09-19T18:59:30.518Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Fussball in der Duncker",
+      "action_flag": 2,
+      "change_message": "Changed group."
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2016-09-19T18:59:39.184Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Fussball in der Duncker",
+      "action_flag": 2,
+      "change_message": "Changed group."
+    }
+  }
+]
