@@ -7,9 +7,17 @@ bower_components: bin/bower
 	bin/bower install
 
 bin/node-sass:
+ifneq "$$(which node-sass)" ""
+	ln -s "$$(which node-sass)" $@
+else
 	npm install node-sass
 	ln -s ../node_modules/.bin/node-sass $@
+endif
 
 bin/bower:
+ifneq "$$(which bower)" ""
+	ln -s "$$(which bower)" $@
+else
 	npm install bower
 	ln -s ../node_modules/.bin/bower $@
+endif
