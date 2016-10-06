@@ -10,7 +10,7 @@
     $ cd sports-embassy
     $ virtualenv . --python=python3
     $ source bin/activate
-    $ pip install -r requirements.txt
+    $ pip install -r requirements-dev.txt
     $ npm install
     $ ./node_modules/.bin/bower install
 
