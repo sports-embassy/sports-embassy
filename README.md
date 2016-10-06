@@ -11,8 +11,6 @@
     $ virtualenv . --python=python3
     $ source bin/activate
     $ pip install -r requirements.txt
-    $ npm install
-    $ ./node_modules/.bin/bower install
 
 ### Starting the App
     $ python manage.py runserver
