@@ -13,6 +13,7 @@
     $ pip install -r requirements-dev.txt
     $ npm install
     $ ./node_modules/.bin/bower install
+    $ python manage.py migrate
 
 ### Starting the App
     $ python manage.py runserver
