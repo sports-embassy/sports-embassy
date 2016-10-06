@@ -21,3 +21,10 @@ else
 	npm install bower
 	ln -s ../node_modules/.bin/bower $@
 endif
+
+clean:
+	rm -rf node_modules
+	rm -rf bower_components
+	rm -f bin/node-sass
+	rm -f bin/bower
+	rm -f common/static/common/style.css
