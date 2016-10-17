@@ -1,0 +1,14 @@
+{
+  "name": "sports-embassy",
+  "description": "Sports Embassy",
+  "main": "index.js",
+  "authors": [
+    "Fabian Kirstein"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sports-embassy/sports-embassy",
+  "dependencies": {
+    "sass-planifolia": "https://github.com/xi/sass-planifolia.git",
+    "mfbs": "https://github.com/xi/mfbs.git"
+  }
+}
