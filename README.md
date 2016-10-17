@@ -10,7 +10,8 @@
     $ cd sports-embassy
     $ virtualenv . --python=python3
     $ source bin/activate
-    $ pip install -r requirements.txt
+    $ pip install -r requirements-dev.txt
+    $ python manage.py migrate
 
 ### Starting the App
     $ python manage.py runserver
